@@ -12,9 +12,9 @@ public class SchoolEntity {
 
     private String name;
     private String type;
-    private List<Student> studentList;
+    private List<StudentEntity> studentList;
 
-    public SchoolEntity(String id, String name, String type, List<Student> studentList) {
+    public SchoolEntity(String id, String name, String type, List<StudentEntity> studentList) {
         this.id = id;
         this.name = name;
         this.type = type;
@@ -48,11 +48,11 @@ public class SchoolEntity {
         this.type = type;
     }
 
-    public List<Student> getStudentList() {
+    public List<StudentEntity> getStudentList() {
         return studentList;
     }
 
-    public void setStudentList(List<Student> studentList) {
+    public void setStudentList(List<StudentEntity> studentList) {
         this.studentList = studentList;
     }
 }

@@ -1,6 +1,6 @@
 package com.example.schoolSampleMongoDB.dto;
 
-import com.example.schoolSampleMongoDB.model.Student;
+import com.example.schoolSampleMongoDB.model.StudentEntity;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ public class SchoolDTO {
     private String id;
     private String name;
     private String type;
-    private List<Student> studentList;
+    private List<StudentEntity> studentList;
 
     public String getId() {
         return id;
@@ -36,11 +36,11 @@ public class SchoolDTO {
         this.type = type;
     }
 
-    public List<Student> getStudentList() {
+    public List<StudentEntity> getStudentList() {
         return studentList;
     }
 
-    public void setStudentList(List<Student> studentList) {
+    public void setStudentList(List<StudentEntity> studentList) {
         this.studentList = studentList;
     }
 }
